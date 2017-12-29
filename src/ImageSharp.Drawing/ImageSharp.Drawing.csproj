@@ -33,9 +33,6 @@
         <Compile Include="..\Shared\*.cs" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\ImageSharp\ImageSharp.csproj" />
-    </ItemGroup>
-    <ItemGroup>
         <PackageReference Include="SixLabors.Core" Version="1.0.0-beta0004" />
         <PackageReference Include="SixLabors.Shapes.Text" Version="1.0.0-beta0003" />
         <PackageReference Include="SixLabors.Shapes" Version="1.0.0-beta0003" />
@@ -43,6 +40,9 @@
         <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta004">
             <PrivateAssets>All</PrivateAssets>
         </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\ImageSharp\ImageSharp.csproj" />
     </ItemGroup>
     <PropertyGroup>
         <CodeAnalysisRuleSet>..\..\ImageSharp.ruleset</CodeAnalysisRuleSet>
