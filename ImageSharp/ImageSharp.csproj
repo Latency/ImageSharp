@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.1;netstandard1.3;netstandard1.6;netstandard2.0;netcoreapp2.0;net45;net471</TargetFrameworks>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIconUrl>https://raw.githubusercontent.com/SixLabors/ImageSharp/master/build/icons/imagesharp-logo-128.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/Latency/ImageSharp</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <RepositoryUrl>https://github.com/Latency/ImageSharp</RepositoryUrl>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>snKey.snk</AssemblyOriginatorKeyFile>
+    <Company>Six Labors</Company>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Copyright>Copyright (c) Six Labors and contributors.</Copyright>
+    <Authors>SixLabors</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RootNamespace>SixLabors.ImageSharp</RootNamespace>
+    <AssemblyName>SixLabors.ImageSharp</AssemblyName>
+    <PackageId>SixLabors.ImageSharp</PackageId>
+    <PackageTags>Image Resize Crop Gif Jpg Jpeg Bitmap Png Core</PackageTags>
+    <Description>A cross-platform library for the processing of image files; written in C#</Description>
+    <PackageReleaseNotes>Update libraries to support .NET Core 2.0 and .NET Framework 4.7.1
+Now supports strong named assemblies.</PackageReleaseNotes>
+    <Version>1.0.1-rc</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SixLabors.Core" Version="1.0.1" />
+    <PackageReference Include="System.Buffers" Version="4.5.0-preview1-25914-04" />
+    <PackageReference Include="System.Memory" Version="4.4.0-preview2-25405-01" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.4.0" />
+    <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.4.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.4.0" />
+  </ItemGroup>
+</Project>
